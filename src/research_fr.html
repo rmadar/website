@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Madar | Recherches</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Mes recherches en physique des particules expérimentale, principalement la recherche du boson de Higgs et celle de nouveaux phénomène dans ATLAS (CERN) et D0 (FANL).">
+  <meta name="author"      content="Romain Madar">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,200" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!------------ My Stuffs ----------------->
+  <link rel="stylesheet" href="Style.css">
+  <link rel="icon" type="image/png" href="../figure/logo/tabIcon.png" />
+  <!---------------------------------------->
+
+  <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']]
+    },
+    "HTML-CSS": {
+      availableFonts: [],
+      scale: 93,
+      <!--webFont: "Latin-Modern",-->
+    },
+  });
+ </script>
+  
+</head>
+
+<body data-spy="scroll" data-target="#MyVerticalNavbar" data-offset="300">
+  
+<div id="background_opacity">
+</div>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index_fr.html"><b>Accueil</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="about_fr.html">À propos</a></li>
+        <li><a href="cv_fr.html">Curiculum vit&aelig</a></li>
+	      <li class="active"><a href="research_fr.html">Recherches</a></li>
+        <li><a href="publications_fr.html">Publications</a></li>
+        <li><a href="conferences_fr.html">Conférences</a></li>
+        <li><a href="teaching_fr.html">Enseignements</a></li>
+        <li><a href="outreach_fr.html">Vulgarisation</a></li>
+        <!--li style="display: none"><a href="newslinks.html">News & links</a></li-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="margin-right:0%">
+        <li><a href="contact_fr.html"><b>Contact</b></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<span class="anchor" id="top"></span>
+
+<div class=container-fluid>
+<div class="col-md-2"  id="MyVerticalNavbar" style="text-align:center;">
+  <ul class="nav nav-pills nav-stacked" data-spy="affix">
+   <li><a href="#context" id="lateralmenu">Contexte général</a></li>
+   <li><a href="#newphysics" id="lateralmenu">Nouveaux phénonmènes</a></li>
+   <li><a href="#detectorRD" id="lateralmenu">R&D détecteur</a></li>
+   <li><a href="#higgs" id="lateralmenu">Boson de Higgs</a></li>
+   <li><a href="#tauID" id="lateralmenu">Lepton tau</a></li>
+ </ul>
+</div>
+
+<div class="col-md-10">
+<div>
+<span class="anchor" id="context"></span>
+<div class="well" id="myBlockText">
+<h1>Context général: la physique des particules</h1>
+<p>
+  La question est conceptuellement assez simple: <span id="ImportantPart">de quoi sommes nous fait?</span> La physique des particules tente de répondre à cette question en étudiant
+  les composants élémentaires de la matière (c'est-à-dire qui ne sont pas composés d'autre chose). Les interactions des ces composants entre eux déterminent la façon dont ils s'agencent pour
+  former la matière telle qu'on la connaît. Aux plus petites èchelles, les particules est en fait décrites par des champs qui obéissent aux lois de la physique quantique (chaque particule
+  apparaît comme un quantum de vibration du champ). Dans cette approche mathématique, <span id="ImportantPart">les symmétries sont la pierre angulaire qui structure la théorie</span>.
+  Il se trouve que la description des particules libres est presque totallement déterminée par les invariances de la théorie ... Et leurs interactions aussi !
+</p>
+
+
+<div class=container-fluid>
+  <div class="col-md-4 vcenter">
+     <figure>  <img src="../figure/research/SM_trans.gif" Id="ResearchPicture" alt="Les particules élémentaires du modèle standard">
+  <figcaption Id="ResearchCaption"><a target="_blank" href="http://www.symmetrymagazine.org/article/july-2015/standard-model" class="ImageCopyright">symmetry magazine</a></figcaption>
+  </figure>
+  </div><!--
+ --><div class="col-md-8 vcenter">
+<h3>Le modèle standard</h3>
+<p>
+  Le modèle standard est la théorie mathématique actuelle qui permet de prédire de manière précise un vaste nombre de situations aux échelles sub-atomique. Les ingérdients de base
+  de cette théorie reposent sur la théorie quantique des champs et les symmétries. <span id="ImportantPart">Malgrés ses nombreux succès</span> (unification de 3 forces fondamentales, prédiction
+  d'une nouvelle interaction - qui fut observée, ...), ce modèle possède <span id="ImportantPart">quelques faiblesses de taille aussi bien conceptuelles
+  qu'observationnelles</span>. Par exemple, la gravitation (qui n'est pas un phénomène anecdotique!) n'est pas décrite dans cette théorie. Dans un autre style plus concret, nous savons
+  aujourd'hui que les neutrinos possèdent une masse (et oui ce n'est pas une obligation d'être massif pour une particule), alors que la structure du modèle standard implique des neutrinos de masse nulle.
+ </p>
+</div>
+</div>
+
+<br>
+
+<div class="container-fluid">
+<div class="col-md-8 vcenter">
+<h3>Comment mieux comprendre la Nature?</h3>
+<p>
+  Une des avancées les plus attrayantes du modèle standard est <span id="ImportantPart">d'unifier les forces électromagnétique et faible</span> en une et une seule interaction: la force électrofaible. Cette
+  unification se produit à très haute énérgie ce qui explique que ces deux forces semblent différentes à notre échelle. Comment la transition entre ces deux régimes s'opère? Le champ de Higgs, et sa particule associée <span id="ImportantPart">le boson de Higgs, joue un rôle central dans cette question</span> et son étude est très clairement un champ de recherche privilégié pour aller plus loin dans notre compréhension de la matière.
+<p/>
+<p>
+  Une autre option (parmis beaucoup d'autres non citées ici!) est d'étudier les particules qui semblent se démarquer des autres. Dans le modele standard, le <span id="ImportantPart">quark top est une particule qui sort du lot</span> de part sa masse, qui est de loin la plus élevée connue à ce jour. <span id="ImportantPart">Personne ne sait vraiment pourquoi le quark top semble différent</span> et les physiciens pensent que des  particules encore inconnues pourraient expliquer cette irrégularité. C'est pourquoi le quark top représente
+    un champ de recherche prometteur pour découvrir de nouveaux phénonèmes.
+</p>
+</div><!--
+ --><div class="col-md-4 vcenter">
+     <figure>  <img src="../figure/research/Top_quark_big_trans.gif" Id="ResearchPicture" alt="Masse de chaque quark, le quark top étant le plus lourd">
+  <figcaption Id="ResearchCaption"><a target="_blank" href="http://www-d0.fnal.gov/Run2Physics/top/public/fall06/singletop/plain_english_summary.html" class="ImageCopyright">D&#216 Single Top Group</a></figcaption>
+  </figure>
+  </div>
+</div>
+
+
+<h3>Les collisions de particules</h3>
+<p>
+  Pour sonder la nature à ces échelles, il est nécessaire d'atteindre des énergies extrêmes (puisque petites distances riment toujours avec grandes énergies). Un moyen de concentrer énormément d'énergie
+  est de produire des <span id="ImportantPart">collisions entre particules fortement accélérées</span>. Il existe dans le monde quelques complexes capables de monter assez en énergie pour sonder la Nature
+  à l'échelle de l'interaction électrofaible. Le dernier était le Tevatron celui situé près de Chicago (avec des collisions proton-antiproton à 1.92 TeV) et seul fonctionnant à l'heure actuelle est le
+  Grand Collisionneur de Hadron (LHC pour "Large Hadron Collider") près de Genève (avec des collisions proton-proton à 13 TeV).
+<p>
+
+<br>
+
+<div class="container-fluid">
+<div class="col-md-5 portfolio vcenter">
+<figure>
+  <video controls="controls" style="border-radius:10px;width:100%;opacity:0.95;"> <source src="../figure/research/Dijet_H264_-720.mov"> </video>
+  <figcaption Id="ResearchCaption"><a target="_blank" href="http://atlas.cern/resources/multimedia" class="ImageCopyright">ATLAS Experiment &copy @@YEAR@@ CERN</a></figcaption>
+</figure>
+
+ </div><!--
+ --><div class="col-md-7 portfolio vcenter">
+<p>
+  Pour savoir ce qui s'est vraiment passé lors d'une collision, il est nécessaire de <span id="ImportantPart">connaître toutes les particules sortantes qui sont produites</span>. Détecteurs extrêment complexes permettent de mesurer les dépôts d'énergie et les traces des particules émises dans toutes les directions. Par exemple, le calorimètre hadronique de l'expérience ATLAS est l'un des <a target="_blank" href="research_fr.html#detectorRD">sous-détecteurs sur lequel je travaille</a>. En combinant l'information de plusieurs sous-détecteurs, les physiciens sont capables de <span id="ImportantPart">reconstruire la collision dans son ensemble</span>. En pratique, des <span id="ImportantPart">algorithmes sophistiqués</span> permettent de reconnaître le type de particule à partir des dépôts d'énergie et des traces. Ce procédé porte le nom de reconstruction et d'identification des particules. J'ai par exemple travaillé sur l'<a target="_blank" href="research_fr.html#tauID">identification des lepton tau</a> (un genre d'électron très lourd).
+</p>
+
+</div>
+</div>
+
+<br>
+
+<p>
+  Une fois que chaque particule de la collision est identifiée, les physiciens sont en mesure de <span id="ImportantPart">sélectionner les collisions ou une particule éphémère à été produite</span>,
+  comme le boson de Higgs. Prouver <span id="ImportantPart">l'existence du boson de Higgs</span> était un des enjeux principaux de la physique des particules depuis les années 90, jusqu'à sa découverte
+  en 2012. J'ai participé à cette longue <a target="_blank" href="research_fr.html#higgsWW">recherche d'abord au Tevatron</a> puis à la <a target="_blank" href="research.html#higgsTauTau">mise en évidence d'une propriété spécifique à cette
+  particule</a> dans ATLAS. Il est également crucial de <span id="ImportantPart">rechercher des collisions qui ne sont pas prédites par le modèle standard</span> pour découvrir de nouvelles lois de la physique.
+  Et c'est pourquoi je participe à la <a target="_blank" href="research.html#newphysics">recherche de phénomènes nouveaux avec le détecteur ATLAS</a> dans des collisions ayant deux leptons avec la même charge électrique.
+</p>
+
+<div id="IconeToTheTop"><a href="#top" id="lateralmenu" data-toggle="tooltip" data-placement="bottom" title="Top"><span class="glyphicon glyphicon-circle-arrow-up"></span></a></div>
+</div>
+
+
+<br>
+
+
+<span class="anchor" id="newphysics"></span>
+<div class="well" id="myBlockText">
+<h1>Phénomènes nouveaux et quark top</h1>
+
+<p>
+  <span id="ImportantPart">Le quark top est la particule la lourde connue</span> et mérite à ce titre une attention particulière. La recherche de nouveaux phénonèmes dans la physique du quark top peut se faire
+  en analysant les collisions avec <span id="ImportantPart">deux leptons de même charge</span> électrique et des jets de quark b. Cet état final est sensible à <span id="ImportantPart">plusieurs signatures nouvelles</span> et a déjà été étudiée au <a target="_blank" href="research.html#Run1FourTop">Run 1 du LHC</a>. L'énergie des collisions ayant augmenté pour le Run 2, c'est analyse est poursuivie avec les données du Run 2 et un <a target="_blank" href="research.html#Run2FourTop">résultat préliminaire est discuté ici</a>.
+</p>
+
+<h3>Quarks top produits par paire</h3>
+
+<p>
+Les collisions de LHC produisent <span id="ImportantPart">un grand nombre de paires top-antitop ($t\bar{t}$)</span> permettant de mesurer précisément les propriétés de cette particule.
+Une fois produit, le quark top se désintègre presque immédiatement en un boson W et un quark b, conduisant à trois états finals différents - 0,1 ou 2 leptons - pour une paire top-antitop.
+Ce genre de collisions est aujourd'hui bien connu et toute <span id="ImportantPart">observation s'écartant de ce qu'on attend</span> serait la signature d'un phénonème physique nouveau. Mais on peut
+tout de même aller plus loin ...
+<p>
+
+
+<div class="container-fluid" >
+<div class="col-md-5 portfolio-item">
+  <figure>
+    <img src="../figure/research/TopPairDecay_trans.gif" Id="ResearchPicture" alt="Désintégration d'une paire quark anti-quark top en leptons, jet legers et jet de b">
+  <figcaption Id="ResearchCaption"> Schéma de la désintégration d'une paire $t\bar{t}$ dans l'état final $\ell+\text{jets}$ (les protons entrant en collison sont perpendiculaires à l'écran).</figcaption>
+  </figure>
+</div>
+<div class="col-md-7 portfolio-item">
+  <figure>
+  <img src="../figure/research/TopPairDecay_ED.png" Id="ResearchPicture" alt="Collision enregistrée par ATLAS où une paire de quark top a été produite">
+  <figcaption Id="ResearchCaption">Collision enregistrée par ATLAS où une paire $t\bar{t}$ a été produite</figcaption>
+  </figure>
+</div>
+</div>
+
+<span class="anchor" id="Run1FourTop"></span>
+<h3>Production de quatre quarks top - Run 1</h3>
+
+<p> La question est <span id="ImportantPart">combien de quark top peut-on produire</span> en une seule collision? Par exemple, le modèle standard prédit que le quark top
+peut aussi être produit seul (c'est-à-dire pas par paire), ce qui est effectivement observé. L'idée ici est de tenter de detecter des collisions où
+<span id="ImportantPart">quatre quarks top</span>, ce qui peut arriver d'après le modèle standard mais avec une probabilité extrêmement faible. Si la detection
+de ces collisions s'avérait positive, <span id="ImportantPart">ce serait là encore le signe d'un nouveau phénonème</span>. L'avantage des collisions $t\bar{t}t\bar{t}$
+est qu'<span id="ImportantPart">elles sont extrêment spectaculaires donc faciles à reconnaître</span> parmis les autres collisions bien connues.
+</p>
+
+<p>
+  <span id="ImportantPart">Mais comment les nouvelles particules que l'on souhaite découvrir peuvent-elle produire $t\bar{t}t\bar{t}$?</span>
+  Il existe plusieurs scénarios possibles, l'un d'entre est le suivant. Le modèle standard de contient pas d'interaction directe entre quarks top,
+  ces derniers interagissent toujours par l'intermédiaire des gluons. Supposons maintenant qu'il existe, en plus des gluons, <span id="ImportantPart">une nouvelle particule
+  très lourde</span> (si bien qu'elle ne peut pas être directement produite au LHC). A l'échelle d'énergie du LHC, cette nouvelle particule nous apparaîtra
+  comme une <span id="ImportantPart">interaction de contact</span> entre les quarks top. Le point intéressant dans cette approche est que l'on verra <span id="ImportantPart">la même signature expérimentale
+  et ce quelque soit la nature la nouvelle particule</span>.
+</p>
+
+<br>
+
+<div class="container-fluid">
+<div class="col-md-6 portfolio-item">
+  <figure>
+    <img src="../figure/research/4top_diag_trans.gif" Id="ResearchPicture" alt="Diagramme de Feynman de la production de quatre quarks top via une interaction de contact.">
+  <figcaption Id="ResearchCaption">Diagramme de Feynman de la production de quatre quarks top via une interaction de contact.
+  <a target="_blank" href="http://link.springer.com/article/10.1007/JHEP10(2015)150" class="ImageCopyright">source</a></figcaption>
+  </figure>
+</div>
+<div class="col-md-6 portfolio-item">
+  <figure>
+    <img src="../figure/research/SSbjets_ATLAS_trans.gif" Id="ResearchPicture"
+	 alt="Nombre de collisions avec deux leptons de même charge électrique (Run 1).">
+  <figcaption Id="ResearchCaption">Run 1: Nombre attendu et observé de collisions ayant deux lepton de même charge électrique et au moins un jet de b, pour plusieurs sélections particulières des collisions (régions de signal).
+  <a target="_blank" href="http://link.springer.com/article/10.1007/JHEP10(2015)150" class="ImageCopyright">source</a></figcaption>
+  </figure>
+</div>
+</div>
+
+<br>
+
+<p>
+  Sélectionner des collisions ayant <span id="ImportantPart">deux leptons (electron ou muon) de même charge électrique</span> permet de voir la production de quatre quark top - si elle existe.
+ L'avantage est que très peu de processus du modèle standard conduisent à cet état final et les <span id="ImportantPart">collisions parasites proviennent essentiellement d'imperfections de
+ reconstruction</span> dues aux limites du détecteurs. En d'autres termes, certaines collisions sont reconstruites à tord comme celles que l'on cherche. Par exemple, si la charge d'un des deux lepton
+ est mal reconstruite, une collision avec deux lepton de charge opposée (qui sont fréquentes) va être classé à tord comme ayant deux lepton de même charge.
+
+Les collisions du Run 1 ont été analysées et un <span id="ImportantPart">un excès intéressant du nombre de collisions observé</span> par rapport aux prédictions
+a été trouvé. Ce résultat, publié dans <a target="_blank" href="http://link.springer.com/article/10.1007/JHEP10(2015)150">JHEP <b>10</b> (2015) 150</a>, a permis de  <span id="ImportantPart">contraindre
+les scénarios possibles</span> de nouvelle physique.  <span id="ImportantPart">Les données du Run 2</span> sont donc cruciales pour confirmer ou infirmer l'excès observé!
+</p>
+
+<span class="anchor" id="UpdateRun2FourTop"></span>
+<h3>Production de quatre quarks top - Run 2</h3>
+
+<p>
+  
+  En Juin 2016, nous avons sorti un <span id="ImportantPart">résultat préliminaire basé sur les données du Run 2 du LHC</span>, enregistrées en 2015 avec une énergie de collision 60% plus grande dont les détails sont donnés dans <a target="_blank" href="http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2016-032/">ATLAS-CONF-2016-032</a>. Les <span id="ImportantPart">contraintes sur une potentielle physique au dela du modèle standard sont bien plus importantes</span> (cf. figure ci-dessous), en particulier pour les processus qui requièrent une grande énergie de collision - comme la production de $t\bar{t}t\bar{t}$. Cependant, l'excès observé en dans les données du Run 1 semble avoir disparu (avec 3.2 fb<sup>-1</sup> de donnéés). Ce résultat a été présenté dans plusieurs conférences internationales telles que <a target="_blank" href="http://lhcp2016.hep.lu.se/">LHCP2016</a> ou encore <a target="_blank" href="https://www.ichep2016.org/">ICHEP2016</a>.
+</p>
+
+<div class="container-fluid">
+<div class="col-md-6 portfolio-item">
+  <figure>
+    <img src="../figure/research/FourTopRun2__fig_10a_trans.png" Id="ResearchPicture"
+	 alt="Contraintes sur l'interaction de contact produisant quatre quark tops" style="width:90%;margin-left:5%">
+   <figcaption Id="ResearchCaption">
+     Contraintes sur l'interaction de contact, décrite par $\Lambda$ (échelle de masse de la nouvelle particule sous-jacente) et $C_{4t}$ (couplage entre quarks).
+     L'expérience permet de contraindre $|C_{4t}|/\Lambda^2$, excluant la zone achurée. La ligne bleue est la contrainte du Run 1.
+   <a target="_blank" href="http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2016-032/" class="ImageCopyright">source</a></figcaption>
+  </figure>
+ </div>
+ <div class="col-md-6 portfolio-item">
+  <figure>
+    <img src="../figure/research/FourTopRun2__fig_04_trans.png" Id="ResearchPicture" style="width:90%;margin-left:5%"
+	 alt="Nombre de collisions avec deux leptons de même charge électrique (Run 1).">
+   <figcaption Id="ResearchCaption">Run 2: Expected and observed number of collisions with same-sign lepton and at least one b jets. Each bin represent a particular event selection (called signal region).
+   <a target="_blank" href="http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2016-032/" class="ImageCopyright">source</a></figcaption>
+  </figure>
+ </div>
+
+ <figure>
+   <a target="_blank" href="../figure/research/FourTopRun2__fig_12.png"><img
+									   src="../figure/research/FourTopRun2__fig_12.png" Id="ResearchPicture" style="width:55%;margin-left:22.5%;margin-top:1%"
+									   alt="Une des collisions du Run 2 selectionnée, où quatre quark top ont pu être produits"></a>
+  <figcaption Id="ResearchCaption">
+    Une des collisions du Run 2 selectionnée, où quatre quark top ont pu être produits, avec deux électrons (lignes bleues terminées par un rectangle vert), un muon isolé (ligne rouge) et plusierus jets (cônes).
+    Les cônes bleus clairs sont les jets identifiés comme provenenant de jet de b (l'un d'entre eux contient un muon non isolé).
+  <a target="_blank" href="http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2016-032/" class="ImageCopyright">source</a></figcaption>
+ </figure>
+
+</div>
+
+<div class="container-fluid">
+
+</div>
+
+<div Id="RefSpan" Style="width:45%;margin-left:55%;"><strong>Réferences:</strong> <a target="_blank" href="http://link.springer.com/article/10.1007/JHEP10(2015)150">JHEP <b>10</b> (2015) 150</a> (Run 1) ,
+<a target="_blank" href="http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2016-032/">ATLAS-CONF-2016-032</a> (Run 2)
+</div>
+
+
+
+<br>
+
+<div id="IconeToTheTop"><a href="#top" id="lateralmenu" data-toggle="tooltip" data-placement="bottom" title="Top"><span class="glyphicon glyphicon-circle-arrow-up"></span></a></div>
+</div>
+
+<br>
+
+<span class="anchor" id="detectorRD"></span>
+<div class="well" id="myBlockText">
+<h1> R&D de détecteur pour le LHC haute luminosité</h1>
+
+
+<div class="container-fluid">
+<div class="col-md-6 portfolio-item vcenter">
+<div class="vcenter">
+<h3>Calorimètre hadronique d'ATLAS </h3>
+
+<p>
+  Le calorimètre hadronique d'ATLAS est le sous-détecteur dédié à <span id="ImportantPart">la mesure de l'énergie des hadrons</span>, particules faites de quarks (tels que les protons, les neutrons ou encore les pions), abondamment produites en collisions proton-proton. Ce sous-détecteur est constitué d'une <span id="ImportantPart">alternance de d'acier et de tuiles scintillantes</span>. Les plaques d'acier permettent aux particules incidentes d'interagir et de produire un grand nombre de particules secondaires, qui vont alors en traversant les tuiles créer de la lumière. Cette lumière, dont l'<span id="ImportantPart">intensité reflète l'énergie de la particule</span> incidente, est convertie en un <span id="ImportantPart">signal électrique</span> par un photo-multiplicateur.
+</p>
+
+<h3> Le LHC haute luminosité </h3>
+<p>
+  Le LHC de haute luminosité est un projet prévus pour 2023 dont le but est d'<span id="ImportantPart">améliorer l'accélerateur actuel</span> afin de produire des collisions à <span id="ImportantPart">un taux
+  bien plus important</span> qu'aujourd'hui. L'idée est de pouvoir mesurer des phénomènes nouveaux <span id="ImportantPart">toujours plus rares</span> et de mesurer les prédiction du modéles standard avec
+  une <span id="ImportantPart">grande précision</span> (en particulier dans le secteur de boson de Higgs). <span id="ImportantPart">Les détecteurs vont également être améliorés</span> afin de supporter une <span id="ImportantPart">exposition aux radiations</span> bien plus importante et d'enregistrer efficacement des <span id="ImportantPart">collisions à un taux sans précédent</span>! Le projet du HL-LHC a été approuvé par le conseil scientifique du CERN en Juin 2016 et aura donc lieu.
+</p>
+
+</div>
+</div><!--
+--><div class="col-md-6 portfolio-item vcenter">
+<div class="vcenter">
+<figure>
+  <video controls="controls" style="border-radius:10px;width:100%;width:90%;margin-left:5%;opacity:0.95;"> <source src="../figure/research/hadronic-calorimeter.mov"> </video>
+  <figcaption Id="ResearchCaption"><a target="_blank" href="http://atlas.cern/resources/multimedia" class="ImageCopyright">ATLAS Experiment &copy @@YEAR@@ CERN</a></figcaption>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+
+<h3> L'électronique de lecture </h3>
+
+<div class="container-fluid">
+<div class="col-md-5 portfolio-item vcenter">
+<figure>
+  <img src="../figure/research/FATALIC.jpg" Id="ResearchPicture" alt="Electronique de lecture du calorimètre hadronique d'ATLAS pour le LHC haute luminosité.">
+  <figcaption Id="ResearchCaption">Electronique de lecture du calorimètre hadronique d'ATLAS pour le LHC haute luminosité.</figcaption>
+</figure>
+</div><!--
+--><div class="col-md-7 portfolio-item vcenter">
+
+<p>
+  L'électronique de lecture est la <span id="ImportantPart">dernière étape</span> avant le traitement de signal. Elle lit la charge électrique délivrée pour le photomultiplicateur, met en forme l'impulsion et numérise le signal. Le traitement de cette impulsion numérisée permet l'extraction de l'<span id="ImportantPart">énergie correspondant à la lumière enregistrée</span> ainsi que le temps auquel cette énergie a été deposée. L'électronique de lecture doit remplire un certain cahier des charges en terme de <span id="ImportantPart">précision, de bruit et de linéarité</span>, le tout sur une gamme dynamique relativement importante. Je travaille actuellement dans la mise au point d'une telle électronique en utilisant un ASIC (pour Application-Specific Integrated Circuit), appelée FATALIC.
+</p>
+
+<p>
+  FATALIC is based on <span id="ImportantPart">130nm technology</span> build in three different blocks: a current conveyer able to directly read a current (and not a voltage), a shaper and an Analog-Digital Converter (ADC). One feature of this readout system to have three different gains in order to have a <span id="ImportantPart">very good precision over a large dynamic range</span>.
+</p>
+</div>
+</div>
+
+<br>
+
+<h3> Testing prototype with particle beams ... </h3>
+<p>
+There is a <span id="ImportantPart">prototype module</span> at CERN which is used to test the whole system (low/high voltage power supplies, data acquisition system, noise of the complete electronic chain, etc ...). In addition, this demonstrator allows to <span id="ImportantPart">compare the various options</span> of readout electronics, which are designed by different labs. In practice, a lot of tests can be done without real particles, for example using <span id="ImportantPart">electronic charge injection system</span> (needed for in-situe calibration). The <span id="ImportantPart">communication between the different components</span> of the readout chain (very front-end, frond-end, back-end) are also studied on this demonstrator. However, it is crucial at some point to see how the <span id="ImportantPart">demonstrator reacts to real particles</span> and this is done using <span id="ImportantPart">particle beam provided by the CERN facilities</span>. The demonstrator is then measuring electrons, muons
+and pions with various incidence angles and electronics readout can be tested in real conditions.
+</p>
+
+
+<br>
+
+<div class="container-fluid">
+<div class="col-md-6 portfolio-item vcenter">
+  <img src="../figure/research/TB_1.jpg" Id="ResearchPicture" alt="Detector prototype being tested with a beam of particles at CERN">
+<figcaption Id="ResearchCaption">Demonstrator module put on a mechanical table allowing to change the beam incidence angle. Beam comes from the pipe barely visible on the left.</figcaption>
+</div><!--
+--><div class="col-md-6 portfolio-item vcenter">
+  <img src="../figure/research/TB_2.jpg" Id="ResearchPicture" alt="Scope allowing to directly measure signal from the electronics">
+  <figcaption Id="ResearchCaption">Scope reading the photomultiplier signal directly (without the very-front end) and the digital signal of the readout (before the ADC).</figcaption>
+</div>
+</div>
+
+<div id="IconeToTheTop"><a href="#top" id="lateralmenu" data-toggle="tooltip" data-placement="bottom" title="Top"><span class="glyphicon glyphicon-circle-arrow-up"></span></a></div>
+</div>
+
+<br>
+
+<span class="anchor" id="higgs"></span>
+<div class="well" id="myBlockText">
+<h1> Higgs boson physics </h1>
+<p>
+<span id="ImportantPart">The Higgs boson was searched for many years before being discovered in 2012</span>. The search strategy was quite wide in order to cover all possible experimental signatures of the Higgs boson. Indeed,
+its mass wasn't predicited and has a strong impact on the way the Higgs boson decays and thus on how the detector will "see" it. They are two types of decay mode which allow to access different properties
+of the Higgs sector:
+<ol>
+  <li><span id="ImportantPart">fermionic decay modes</span> reflect the Yukawa coupling terms, <span id="ImportantPart">not constrained by any invariance</span>,
+  like in <a target="_blank" href="research.html#higgsTauTau">this search</a>. </li>
+  <li><span id="ImportantPart">bosonic decay modes</span> reflect the behaviour of the Higgs field under <span id="ImportantPart">electro-weak symmetry</span>,
+  like in <a target="_blank" href="research.html#higgsTauTau">this search</a>. </li>
+</ol>
+</p>
+
+<span class="anchor" id="higgsTauTau"></span>
+<!--div class="well" id="mySubBlock"-->
+
+<h3>Search and evidence for Higgs boson decaying into tau leptons in ATLAS</h3>
+  
+
+<p>
+ Unlike couplings to electroweak bosons, <span id="ImportantPart">couplings between the Higgs boson and fermions are not constrained by any symmetry</span>.
+ Thus, measuring the branching ratio of the Higgs boson decaying into a fermion pair is testing a part of the Standard Model, called <span id="ImportantPart">Higgs Yukawa sector</span>,
+ which has no fundamental reason to be like we think it is. They are two fermions which provide a good opportunity to experimentally probe the Yukawa part of
+ the Higgs sector: the b quarks and the tau lepton. Both benefits from a significant branching ratio but are <span id="ImportantPart">extremely challenging</span>
+ from the experimental point of view.
+</p>
+
+
+<p>
+  If we focus on the <span id="ImportantPart">tau-tau final state</span>, there are three actual different final states seen by the detector depending on how each tau lepton will decay (more details <a href="research.html#tauID">here</a>) , namely tau<sub>lep</sub>tau<sub>lep</sub> (dilepton final state), tau<sub>lep</sub>tau<sub>had</sub> (lepton plus a hadronically decaying tau lepton) and tau<sub>had</sub>had<sub>lep</sub> (two hadronically decaying tau lepton). Since tau leptons decays before reaching the detecor, they have to <span id="ImportantPart">be identified from their decay products</span>.
+  Hadronically decaying tau lepton are particularly challenging to identify among jets, largely produced in hadronic collider
+  (for more details, see my <a target="_blank" href="research.html#tauID">researches on tau lepton identification</a>). On top of the <span id="ImportantPart">instrumental
+  background</span> due to the hadronic final states, there is an <span id="ImportantPart">irreducible background where a Z boson decays into tau-tau</span> having the exact same final state of the collision we are looking for.
+  </p>
+
+
+<div class="container-fluid">
+<div class="col-md-5 portfolio-item vcenter">
+  <figure>
+    <img src="../figure/research/htautau_ATLAS_trans.gif" Id="ResearchPicture"
+	 alt="Distribution of the final discriminant for the predicted background and the observed data. Red line it the Higgs signal.">
+  <figcaption Id="ResearchCaption">Final discriminant distribution for the predicted background, the signal and the observed data. <a target="_blank" href="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2013-32/" class="ImageCopyright">source</a></figcaption>
+  </figure>
+</div><!--
+--><div class="col-md-7 portfolio-item vcenter">
+   <figure>
+     <img src="../figure/research/htautau_ATLAS_EventDisplay.png" Id="ResearchPicture"
+	  alt="Display of a collision where a Higgs boson decaying into two tau leptons">
+  <figcaption Id="ResearchCaption">Collision where the Higgs boson might have been produced in association with two forward jets.
+  It decays into a tau<sub>had</sub> (green track and yellow energy deposit) and tau<>e</> (blue track and green energy deposit).
+  The reconstructed (tau,tau) mass
+  is 127 GeV. <a target="_blank" href="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2013-32/" class="ImageCopyright">source</a></figcaption>
+  </figure>
+</div>
+</div>
+
+<br>
+
+<p>
+I mostly participated to the <span id="ImportantPart">tau<sub>lep</sub>tau<sub>had</sub> analysis</span> exploiting a lot of properties to extract the signal from
+the fake tau lepton background and the Z boson production. For example, specifically looking a collisions where the <span id="ImportantPart">(tau,tau) system is highly boosted</span>
+allowed to significantly reduce the background while keeping a good fraction of the signal. Actually, one of the biggest achievement was to use a <span id="ImportantPart">multivariate
+analysis to optimally exploit these numerous properties</span> together and <span id="ImportantPart">reach a good enough sensitivity</span> to actually see the Higgs boson production in the
+tau-tau decay mode. At the end, the analysis was based on six different categories of events, classified depending on their topology. Each of them had a dedicated set of observables entering in the final MVA.
+</p>
+  
+<div class="container-fluid">
+<div class="col-md-6 portfolio-item vcenter">
+  <p>
+This channel is particularly relevant because it allows to <span id="ImportantPart">access to one of the finger print of the Higgs boson</span>.
+Indeed, one of the specificity of the Higgs boson is that his coupling to
+other particle follow a very simple law: it is proportional to the masse of the particle. The coupling between electroweak boson and the Higgs boson are well measured
+(Higg boson decay into two vector bosons - W, Z, photon - were actually the golden channel to discover the Higgs boson), but <span id="ImportantPart">what's about the fermions?</span>
+The coupling to the top quark is well known but only accessible indirectly. <span id="ImportantPart">The direct observation of couplings between the Higgs boson and a fermion
+is provided by the tau-tau channel</span>. And once again, the observation is in good agreement with prediction from the Standard Model. For more details, see <a target="_blank" href="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2015-044/">ATLAS-CONF-2015-044</a>.
+</p>
+</div><!--
+--><div class="col-md-6 portfolio-item vcenter">
+   <figure>
+     <img src="../figure/research/higgs_ATLAS_trans.gif" Id="ResearchPicture" style="width:80%;margin-left:10%;"
+	  alt="Observation of Higgs boson coupling to other Standard Model particles at CERN">
+    <figcaption Id="ResearchCaption">Fingerprint of the Higgs boson, as observed in real data.</figcaption>
+  </figure>
+</div>
+</div>
+
+<br>
+  
+
+
+<div Id="RefSpan" Style="width:20%;margin-left:80%;">
+  <strong>References:</strong> <a target="_blank" href="http://link.springer.com/article/10.1007/JHEP04(2015)117">JHEP <b>04</b> 117</a>,
+  ATLAS <a target="_blank" href="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2013-32/">page</a>
+</div>
+<!--/div-->
+
+
+<span class="anchor" id="higgsWW"></span>
+<!--div class="well" id="mySubBlock"-->
+
+<h3>Search for Higgs boson decaying into WW in the mu+tau final state at D&#216</h3>
+
+
+<p>
+  <span id="ImportantPart">The Tevatron collider</span> was mostly sensitive to the WW decay channel for a Higgs boson mass of m<sub>H</sub>=165 GeV. Indeed H almost always decays
+  in this mode for m<sub>H</sub> ~ 2 m<sub>W</sub>. Experimentally, the e-e, e-mu and mu-mu final state are the easiest to identify and to reconstruct, in particular
+  on a hadronic collider. However, before the LHC started, the Tevatron was the <span id="ImportantPart">only collider able to constrain the Higgs sector</span> and it was important
+  to exploit every possible channels, including tau lepton channels.
+</p>
+
+<p>
+  The strategy was then to search for this Higgs boson in <span id="ImportantPart">mu+tau events</span>, coming from WW decay of the Higgs boson
+    where one W decays into a muon and a neutrino and the other decays into a tau and a neutrino:
+  $$
+  pp \to H \to W+W \to \mu\nu_{\mu} + \tau\nu_{\tau}
+  $$
+  
+  Since tau leptons decays before reaching the detecor, they have to <span id="ImportantPart">be identified from their decay products</span>. Hadronically decaying tau lepton
+  are particularly challenging to identify among jets, largely produced in hadronic collider (for more details, see my <a target="_blank" href="research.html#tauID">researches on tau lepton identification</a>).
+  Therefore, <span id="ImportantPart">the main background of this search
+  is the production of W boson is association with jets</span>, where the W boson decays into a muon and a jet is wrongly identified as hadronically decaying tau lepton.
+</p>
+
+
+<div class="container-fluid">
+<div class="col-md-6 portfolio-item">
+  <figure>
+    <img src="../figure/research/hWWmutau_D0_trans.gif" Id="ResearchPicture"
+	 alt="Distribution of the final discriminant for the predicted background and the observed data. Black line is the Higgs signal">
+  <figcaption Id="ResearchCaption">Final discriminant distribution for the predicted background, the signal and the observed data. <a target="_blank" href="http://inspirehep.net/record/1094381" class="ImageCopyright">source</a></figcaption></figcaption>
+  </figure>
+</div>
+<div class="col-md-6 portfolio-item">
+  <figure>
+    <img src="../figure/research/hWWmutau_D0_limit_trans.gif" Id="ResearchPicture"
+	 alt="Excluded production cross-section in unit of the Standard Model prediction, as function the tested Higgs boson mass">
+    <figcaption Id="ResearchCaption">Excluded production cross-section in unit of the Standard Model prediction, as function the tested Higgs boson mass.
+      <a target="_blank" href="http://inspirehep.net/record/1094381" class="ImageCopyright">source</a>
+    </figcaption>
+  </figure>
+</div>
+</div>
+
+<br>
+
+<p>
+  Even more important than reducing the background, is <span id="ImportantPart">how to accurately estimate it</span>. Indeed, this part is crucial since we search for
+  an excess of collision with respect to a predicted number of background collisions. The number of background events coming from
+  W+jets strongly depends on how frequently a jet can look like tau<sub>had</sub>, which is quite difficult to model using simulation.
+  <span id="ImportantPart">That is why a dedicated method based on data was elaborated in order to correct the simulation</span>.
+  </p>
+
+  
+  <p>
+  In order to separate collisions from background processes and collisions where H were produced, <span id="ImportantPart">a multi-variate analysis (MVA) approach was adopted</span>. Many observables
+  allowing to help identifying signal collision were combined in a Neural Network (NN) in order to get an optimal discriminant exploiting all the physics behind the background
+  and the Higgs boson production. Using this strategy, <span id="ImportantPart">the experimental sensitvity to H production reached 8 times the SM predicted rate</span>.
+  </p>
+
+<div Id="RefSpan" Style="width:32%;margin-left:65%;"><strong>References:</strong> <a target="_blank" href="https://tel.archives-ouvertes.fr/tel-00620824v2">my PhD thesis</a> and <a target="_blank" href="http://inspirehep.net/record/1094381">Phys. Lett. B <b>714</b>, 237</a></div>
+
+
+<br>
+
+<div id="IconeToTheTop"><a href="#top" id="lateralmenu" data-toggle="tooltip" data-placement="bottom" title="Top"><span class="glyphicon glyphicon-circle-arrow-up"></span></a></div>
+</div>
+
+
+<br>
+
+
+<span class="anchor" id="tauID"></span>
+<div class="well" id="myBlockText">
+<h1> Tau lepton in hadrons collider</h1>
+
+<h3> Why tau lepton are challenging? </h3>
+
+<p>The tau lepton is the <span id="ImportantPart">heaviest known lepton</span> and it is also the only one decaying after a very short distance (~100 micrometers).
+Thus, if one wants to <span id="ImportantPart">probe particle decaying into tau leptons</span>, one need to reconstruct them from they decay products. It also means that the reconstructed particles must be identified as a tau lepton decay, which might not always be trivial depending on the decay mode. They are two kinds of decay decay modes: <span id="ImportantPart">35% of leptonic decay</span> (with one neutrino) and <span id="ImportantPart">65% of hadronic decay</span> (with two neutrinos). The leptonic decay gives either an electron or a muon which are relatively easy to reconstruct (but impossible to distinguish from lepton originating from heavy boson). The hadronic decay mode is more tricky because it is subdivided in 3 main types of signature, depending on the hadrons produced in the decay. In addition, <span id="ImportantPart">hadrons are heavily produced in hadronic collisions and will easily mimic tau leptons</span>.
+</p>
+
+
+<div class="container-fluid">
+<div class="col-md-5 portfolio-item vcenter">
+  <figure>
+  <img src="../figure/research/TauSignature_trans.png" Id="ResearchPicture" alt="Signature of the hadronic decay of the tau lepton">
+  <figcaption Id="ResearchCaption">Scheme of the signature of hadronically decaying tau lepton, compared with a jet arising from quark hadronisation. <a target="_blank" href="" class="ImageCopyright">source</a></figcaption>
+  </figure>
+</div><!--
+--><div class="col-md-1 portfolio-item vcenter">
+</div><!--
+--><div class="col-md-6 portfolio-item vcenter">
+  <figure>
+    <img src="../figure/research/TauIDvar_trans.png" Id="ResearchPicture" alt="Discriminant variable to separate hadronic tau
+	 lepton and jets from QCD">
+  <figcaption Id="ResearchCaption">One particular observable, related to the fraction of charged hadrons, allowing to discriminate between jets and hadronic taus. <a  target="_blank" href="https://tel.archives-ouvertes.fr/tel-00620824v2/document" class="ImageCopyright">source</a></figcaption>
+  </figure>
+</div>
+</div>
+
+<br>
+
+<p>
+Since tau lepton mostly decay into hadrons, it is quite <span id="ImportantPart">important to be able to identify them among all hadrons produced in a collision,
+in particular, those from jets</span> - experimental signature of a quark. This is done exploiting <span id="ImportantPart">specific properties of the hadrons coming from the tau decay</span>.
+For example, hadrons from a tau will be <span id="ImportantPart">very collimated</span> and not very numerous (mostly 1, 2 or 3). Looking around the most energetic hadron will also provide a good insight
+whether this is a hadronic tau - <span id="ImportantPart">low activity, few tracks and energy deposit</span> - or a jet - high activity, many tracks and energy deposits. The <span id="ImportantPart">fraction of charged hadrons and neutral hadrons</span> will also be a nice handle to distinguish between hadronic taus and jets.
+</p>
+
+
+<h3> How to improve hadronic tau identification </h3>
+<p>I worked on several aspects to <span id="ImportantPart">better identify hadronics taus</span>. First, I tried to explore detailed properties of the hadronic decay.
+For example, in some cases a particular hadron is produced a &#x3C1, decaying into a neutral and a charged pions. It means that the two final pions will have a particular correlation when they come from a tau, which won't be the case if they are randomely produced in a jet. At D&#216, I developped a <span id="ImportantPart">dedicated algorithm to reconstruct close-by photons coming from neutral pion decay, using scintillating strip detector</span> in D&#216. Several other ideas were tested in order better reject fake taus, based on physics but also on <span id="ImportantPart">sophisticated data analysis like a neutral network</span>. The result was a significant improvement of tau identification efficiency, 20% on signal (true taus) over background (jets) ratio.</p>
+
+
+<div class="container-fluid">
+<div class="col-md-6 portfolio-item vcenter">
+  <figure>
+  <img src="../figure/research/NN_trans.png" Id="ResearchPicture" alt="Basic principle of a neural network">
+  <figcaption Id="ResearchCaption">Illustration of how a neural network works. Each neuron takes several numbers in input, makes a linear combination and return a number between 0 and 1 (with a "step function", written $\varphi_{\theta}(x)$ here). <a target="_blank" href="https://tel.archives-ouvertes.fr/tel-00620824v2/document" class="ImageCopyright">source</a></figcaption>
+  </figure>
+</div><!--
+--><div class="col-md-6 portfolio-item vcenter">
+  <figure>
+    <img src="../figure/research/TauPerf_trans.png" Id="ResearchPicture"
+	 alt="Improvement of the identification of hadronic tau thanks to a machine learning appraoch">
+  <figcaption Id="ResearchCaption">Final improvement on the ratio true/fake, for the initial method and the one including all the new ideas. <a target="_blank" href="https://tel.archives-ouvertes.fr/tel-00620824v2/document" class="ImageCopyright">source</a></figcaption>
+  </figure>
+</div>
+</div>
+
+<div id="IconeToTheTop"><a href="#top" id="lateralmenu" data-toggle="tooltip" data-placement="bottom" title="Top"><span class="glyphicon glyphicon-circle-arrow-up"></span></a></div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <p>Romain Madar &copy Copyrights</p>
+</footer>
+
+</body>
+
+
+<!------------ My Stuffs ----------------->
+<script src="MyJavaScripts.js"></script>
+<!---------------------------------------->
+
+<script>
+
+  $(function() {
+  $('a[href*="#"]:not([href="#"]):not([href*=".html"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+  
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+});
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88050758-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
