@@ -6,9 +6,10 @@ based on bootstrap javascript library.
 ### To-do's
 
 **Content**
+- [ ] add the link to the 4top combined result (when ready)
 - [ ] update the front page plots with more recent results (FATALIC, analysis)
 - [ ] write a short text for the last result
-- [ ] write a short text for the 4top combined result (to come)
+- [ ] write a short text for the 4top combined result (when ready)
 
 
 **Structure**
